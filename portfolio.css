@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: fit-content;
+}
+body{
+    background: linear-gradient(to bottom, rgb(15, 15, 209),rgb(48, 45, 45));
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content;
+    
+}
+.navbar{
+    height: 100px;
+    width: 100%;
+    position: relative;
+    font-family: sans-serif;
+}
+.navlogo a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 40px;
+    display: flex;
+    margin-left: 30px;
+    transform: translateY(30px);
+    animation: fadein 2s ease forwards;
+}
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.navitems a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+.navitems {
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    text-align: right;
+    list-style: none;
+    margin-right: 30px;
+    transform: translateY(-10px);
+    animation: fadein 2s ease forwards;
+}
+.navitems a:hover{
+    color: rgb(14, 241, 14);
+    transition: 0.5s;
+}
+.navitems a.active{
+    color: rgb(14, 241, 14);
+    font-weight:bold ;
+}
+.por-wrapper{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+.po-items{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(800px, 1fr));
+    gap: 40px;
+    padding: 10px;
+}
+.port-h1{
+    font-family: "Archivo";
+    font-size: xx-large;
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 30px; 
+    -webkit-text-stroke: 2px black;
+}
+.port-p1{
+    font-family: "Roboto";
+    font-size: 20px;
+}
+.s-h2{
+    font-family: "Archivo";
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.s-p{
+    font-family: "Roboto";
+    font-size: larger;
+}
+.por-a{
+    background-color: white;
+   margin-top: 15px;
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    border:  2px solid black;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    font-size: xx-large;
+    padding: 10px 27px;
+}
+.por-a:hover{
+    background-color: rgb(14, 241, 14);
+    transition: .5s;
+}
+.school{
+    border:3px solid rgb(26, 26, 73);
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px rgb(26, 26, 73);
+    padding: 8px 0;
+  
+}
+.artwork{
+    border:3px solid rgb(26, 26, 73);
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px rgb(26, 26, 73);
+    padding: 8px 0;
+  
+}
+.por-a:hover{
+    background-color: rgb(14, 241, 14);
+    transition: .5s;
+}
+.a-h2{
+    font-family: "Archivo";
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.a-p2{
+    font-family: "Roboto";
+    font-size: larger;
+}
+.webp{
+    border:3px solid rgb(26, 26, 73);
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px rgb(26, 26, 73);
+    padding: 8px 0;
+  
+}
+.por-a:hover{
+    background-color: rgb(14, 241, 14);
+    transition: .5s;
+}
+.w-h2{
+    font-family: "Archivo";
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.w-p{
+    font-family: "Roboto";
+    font-size: larger;
+}
+.f-p{
+    color:white ;
+    font-size: larger;
+    font-family: "poppins" ;
+    padding-top: 20px;
+}
+.h-footer{
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(14, 226, 14);
+    animation: fadein 2s ease forwards;
+}
+.icon span{
+    color: white;
+    font-family: "Roboto"; 
+}
+#phone{
+    padding-top: 5px;
+}
+#email{
+    padding-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Responsive Enhancements */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+    body {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.95rem;
+    }
+    .container, .content, .wrapper {
+        width: 100%;
+        padding: 10px;
+    }
+    nav, header, footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.85rem;
+    }
+    h1, h2, h3 {
+        font-size: 1.2em;
+    }
+    .navitems, .menu, .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,181 @@
+/* Fonts & Base */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F5F5DC;
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Noto Serif', serif;
+    color: #8B4513;
+  }
+  
+  header {
+    background-color: #DAA520;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .subtitle {
+    animation: fadeIn 2s ease-in-out;
+    font-style: italic;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Intro Section */
+  .intro {
+    padding: 20px;
+  }
+  
+  .featured-cities {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 2px solid #8B4513;
+    padding: 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    background-color: #DAA520;
+  }
+  
+  /* Gallery Section */
+  #gallery {
+    padding: 20px;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 15px;
+  }
+  
+  .gallery-card {
+    background: #fff;
+    border: 1px solid #8B4513;
+    transition: background-color 0.4s;
+    align-items: center;
+  }
+
+  
+  .gallery-card:hover {
+    background-color: #DAA520;
+  }
+  
+  /* City of the Day */
+  .city-day {
+    padding: 20px;
+    background-color: #FFF5DC;
+  }
+  
+  .city-feature {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .city-box {
+    background-color: #8B4513;
+    color: white;
+    padding: 20px;
+    width: 300px;
+    transition: background-color 0.4s ease;
+  }
+  
+  .city-box:hover {
+    background-color: #DAA520;
+  }
+  
+  /* Form Section */
+  .form-section {
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  form {
+    display: grid;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  input, textarea {
+    padding: 8px;
+    border: 1px solid #8B4513;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #DAA520;
+    outline: none;
+  }
+  
+  button {
+    background-color: #8B4513;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #DAA520;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+/* Responsive Enhancements */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+    body {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.95rem;
+    }
+    .container, .content, .wrapper {
+        width: 100%;
+        padding: 10px;
+    }
+    nav, header, footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.85rem;
+    }
+    h1, h2, h3 {
+        font-size: 1.2em;
+    }
+    .navitems, .menu, .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

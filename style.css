@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: fit-content;
+}
+body{
+    background: linear-gradient(to bottom, rgb(18, 18, 126),black);
+    background-repeat: no-repeat;
+    height: fit-content;
+}
+
+.navbar{
+    height: 100px;
+    width: 100%;
+    position: relative;
+    font-family: sans-serif;
+}
+.navlogo a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 40px;
+    display: flex;
+    margin-left: 30px;
+    transform: translateY(30px);
+    animation: fadein 2s ease forwards;
+
+
+
+}
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.navitems a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+.navitems {
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    text-align: right;
+    list-style: none;
+    margin-right: 30px;
+    transform: translateY(-10px);
+    animation: fadein 2s ease forwards;
+}
+.navitems a:hover{
+    color: rgb(14, 241, 14);
+    transition: 0.5s;
+}
+.navitems a.active{
+    color: rgb(14, 241, 14);
+    font-weight:bold ;
+}
+.home-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+   padding-top: 60px;
+   padding-bottom: 20px;
+   padding-right: 120px;
+   padding-left: 120px;
+    font-family: "Roboto";
+    color: white;
+    margin-top: 130px;
+    animation: fadein 2s ease forwards;
+    margin-top: -0.75pxpx;
+    min-height: 70vh;
+    
+    
+}
+
+.img-wrapper {
+    flex-shrink: 0;
+    margin-top: -40px;
+    margin-right: 40px;
+}
+
+.img1 {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    animation: fadein 2s ease forwards;
+    border-radius: 50%;
+    border: 1px solid rgb(10, 10, 87);
+    }
+
+.home-content .home-h1 span{
+    display: flex;
+}
+.home-content .home-h2{
+    margin-top: 12px;
+}
+.home-content .home-h2 span{
+    color: transparent;
+    -webkit-text-stroke: .5px rgb(14, 226, 14);
+    font-size: larger;
+}
+
+.home-content .home-p{
+    font-size: 20px;
+    margin-top: 5px;
+    width: 60%;
+    font-family: "Archivo";
+}
+main{
+    flex: 1;
+}
+.h-footer{
+    height: fit-content;
+    width: 100%;
+    
+    text-align: center;
+    background-color: rgb(14, 226, 14);
+}
+.f-p{
+    color:white ;
+    font-size: larger;
+    font-family: "poppins" ;
+    padding-top: 20px;
+}
+.icon span{
+    color: white;
+    font-family: "Roboto"; 
+}
+#phone{
+    padding-top: 5px;
+}
+#email{
+    padding-top: 5px;
+}
+
+
+
+
+
+/* Responsive Enhancements */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+    body {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.95rem;
+    }
+    .container, .content, .wrapper {
+        width: 100%;
+        padding: 10px;
+    }
+    nav, header, footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.85rem;
+    }
+    h1, h2, h3 {
+        font-size: 1.2em;
+    }
+    .navitems, .menu, .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
